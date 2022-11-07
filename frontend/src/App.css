@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-box {
+    @apply bg-slate-300 hover:bg-slate-200 font-semibold py-2 px-3 rounded outline-none caret-black text-black;
+  }
+}
+
+/* 
+
+
+"all_products": [
+        {
+            "_id": "636697ab4b471dd062456849",
+            "productName": "Lime Shoes",
+            "productUrl": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+            "productPrice": 299,
+            "__v": 0
+        },
+        {
+            "_id": "63669926ba1da64ec0b4e12b",
+            "productName": "Red Color Shoe",
+            "productUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+            "productPrice": 399,
+            "__v": 0
+        },
+        {
+            "_id": "6366995bba1da64ec0b4e12d",
+            "productName": "Yellow Color Shoe",
+            "productUrl": "https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+            "productPrice": 249,
+            "__v": 0
+        },
+        {
+            "_id": "63669980ba1da64ec0b4e12e",
+            "productName": "Stylish Shoe",
+            "productUrl": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+            "productPrice": 249,
+            "__v": 0
+        },
+        {
+            "_id": "6366999fba1da64ec0b4e12f",
+            "productName": "Sports Shoes",
+            "productUrl": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+            "productPrice": 599,
+            "__v": 0
+        },
+        {
+            "_id": "636699bdba1da64ec0b4e130",
+            "productName": "Nike Shoes",
+            "productUrl": "https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+            "productPrice": 599,
+            "__v": 0
+        },
+        {
+            "_id": "636699e5ba1da64ec0b4e131",
+            "productName": "Swiss Sports Shoes",
+            "productUrl": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+            "productPrice": 299,
+            "__v": 0
+        },
+        {
+            "_id": "636699ffba1da64ec0b4e132",
+            "productName": "Office Shoes",
+            "productUrl": "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+            "productPrice": 299,
+            "__v": 0
+        },
+        {
+            "_id": "63669a31ba1da64ec0b4e133",
+            "productName": "Branded Shoes",
+            "productUrl": "https://images.unsplash.com/photo-1603808033587-935942847de4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NnwxMDczMzk0NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60",
+            "productPrice": 499,
+            "__v": 0
+        },
+        {
+            "_id": "63669a58ba1da64ec0b4e134",
+            "productName": "Sports Shoes, Jogging",
+            "productUrl": "https://images.unsplash.com/photo-1581327390731-312ec8f2a7dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3wxMDczMzk0NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60",
+            "productPrice": 299,
+            "__v": 0
+        },
+        {
+            "_id": "63669a76ba1da64ec0b4e135",
+            "productName": "Nike, Shoes",
+            "productUrl": "https://images.unsplash.com/photo-1580902394724-b08ff9ba7e8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTB8MTA3MzM5NDR8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60",
+            "productPrice": 399,
+            "__v": 0
+        },
+        {
+            "_id": "63669a9aba1da64ec0b4e136",
+            "productName": "Nike Shoes",
+            "productUrl": "https://images.unsplash.com/photo-1495557077419-2384a0150025?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8ODUzNTI0Nnx8ZW58MHx8fHw%3D&dpr=2&auto=format&fit=crop&w=294&q=60",
+            "productPrice": 399,
+            "__v": 0
+        }
+    ]
+
+
+*/
