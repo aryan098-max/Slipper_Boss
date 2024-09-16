@@ -30,6 +30,19 @@ This project can be expanded further to include features like payment integratio
 ![Cart](https://github.com/user-attachments/assets/f3fb0498-b25e-4b15-a66b-db9ffee1bb4c)
 
 ## Database 
+![database](https://github.com/user-attachments/assets/6168355f-a591-4d3a-8aaf-1e2c070d950d)
+
+# Clone the project 
+https://github.com/aryan098-max/Slipper_Boss.git
+
+# Dependencies
+Download all the dependencies from package.json
+
+# For support mail to 
+aryangupta4279@gmail.com
+
+
+
 
 
 
